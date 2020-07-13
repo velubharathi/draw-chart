@@ -1,38 +1,64 @@
-.App {
+/************************ ////////////Chart Design////////////**********************/
+html, body {
+  height: 100%;
+  margin: 0;
+}
+.App, #root{
+  height: 100%;
+}
+.bodyContainer{
+  min-width: 20mm;
+  height: 88%;
+  /* float:left; */
+  /* background-color: wheat; */
+  width: 100%;
+}
+.leftMenu {
+  min-width: 20mm;
+  height: 100%;
+  float:left;
+  background-color: wheat;
+  width: 20%;
+}
+.pageContainer{
+  height: 100%;
+  background-color: rgb(201, 206, 206);
+  width: 79%;
+  border:1px solid thistle;
+  float: right;
+}
+
+.barChart {
+  position: absolute;
+  left: 5%;
+}
+.pieChart {
+  position: absolute;
+  left: 5%;
+  top: 30%;
+}
+
+.mydiv {
+  position: absolute;
+  z-index: 9;
+  background-color: #f1f1f1;
+  border: 1px solid #d3d3d3;
   text-align: center;
+  /* display: none; */
+  resize: both;
+  overflow: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.mydivheader {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background-color: #2196F3;
+  color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.closeIcon {
+  float: right;
+  z-index: 100;
+  cursor: pointer;
 }

@@ -1,0 +1,13 @@
+.headerContainer {
+    background: #004000;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    height: 70px;
+    box-shadow: 0 6px 6px rgba(0,0,0,.1);
+}
+
+.headerContainer > div {
+    display: flex;
+    align-items: center;
+}
